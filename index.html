@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<body>
+  <button onclick="play_pause()" style="margin: 10px;width: 40%; height: 100px;"> play/pause </button>
+  <button onclick="volume_up()" style="margin: 10px;width: 40%; height: 100px;"> volume up </button>
+  <button onclick="volume_down()" style="margin: 10px;width: 40%; height: 100px;"> volume down </button>
+  <button onclick="rewind()" style="margin: 10px;width: 40%; height: 100px;"> rewind </button>
+  <button onclick="fast_forward()" style="margin: 10px;width: 40%; height: 100px;"> fast forward </button>
+</body>
+<script>
+  async function play_pause(){
+    await fetch('http://192.168.1.35:3000/play-pause');
+  }
+  async function volume_up(){
+    await fetch('http://192.168.1.35:3000/volume-up');
+  }
+  async function volume_down(){
+    await fetch('http://192.168.1.35:3000/volume-down');
+  }
+  async function rewind(){
+    await fetch('http://192.168.1.35:3000/rewind');
+  }
+  async function fast_forward(){
+    await fetch('http://192.168.1.35:3000/fast-forward');
+  }
+</script>
+</html>
