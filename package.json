@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/antoniormrzz/movie-remote-control#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "robotjs": "^0.6.0"
   }
 }
